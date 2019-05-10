@@ -10,11 +10,12 @@
     <link rel="css/stylesheet" href="estilohome.css">
 
     <title>fixIt</title>
+    
   </head>
   <body>
     
     <!-- NAVBAR (BARRA SUPERIOR) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">fixIt</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,16 +54,19 @@
     <!-- FINAL NAVBAR -->
 
     <div class="container-fluid">
-        <div class="row">
+    
+        <div class="row" >
             <!-- SLIDES DE IMAGENS -->
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="10000">
-                        <img src="ny.jpg" class="d-block w-100">
+                <div class="carousel-inner w-100">
+                    <div class="carousel-item active" data-interval="2000">
+                        <img src="ny.jpg" class="d-block w-100" style="height: 100vh">
                     </div>
-                    
                     <div class="carousel-item" data-interval="2000">
-                        <img src="back.jpg" class="d-block w-100" alt="...">
+                        <img src="img.jpg" class="d-block w-100" alt="..." style="height: 100vh" style="width:100vh">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="back.jpg" class="d-block w-100" alt="..." style="height: 100vh">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -77,7 +81,9 @@
             
             <!-- FIM SLIDES-->
         </div>
+   
     </div>
+  
 
 
     <!-- Optional JavaScript -->
