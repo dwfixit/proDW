@@ -1,0 +1,174 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Cadastro Cliente</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css?fbclid=IwAR3E6jvID8yvYH0G7TbkGKWK21EeDPBn-y0bVAV8SHwdAacAgoozS--bNo4" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">fixIt</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cadastrar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Cadastrar como Cliente</a>
+                      <a class="dropdown-item" href="#">Cadastrar como Prestador</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Estou com dúvida</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Meu Perfil</a>
+                </li>
+              </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <br><br><br>
+  <div class="container">
+<div class="py-5 text-center">
+  <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="72" height="72">
+  <h2>Cadastro</h2>
+  <p class="lead">Para começar a conhecer profissionais de qualidade, cadastre-se. É grátis!</p>
+</div>
+  <div class="col-md-12 order-md-1">
+    <form class="needs-validation" novalidate="">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Nome</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Sobrenome</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="username">Nome de usuário</label>
+        <div class="input-group">
+          
+          <input type="text" class="form-control" id="username" placeholder="Escolha um nome de usuário para fazer o login" required="">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="usuario@exemplo.com">
+      </div>
+
+      <div class="mb-3">
+          <label for="address">Endereço Completo</label>
+          <input type="text" class="form-control" id="address" required="">
+        </div>
+
+      <div class="mb-3">
+        <label for="address">Bairro</label>
+        <input type="text" class="form-control" id="address" required="">
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-4 mb-3">
+          <label for="state">Estado</label>
+          <select class="custom-select d-block w-100" id="state" required="">
+            <option value="">Escolha</option>
+            <option>Goiás</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+          </select>
+        </div>
+        <div class="col-md-5 mb-3">
+            <label for="country">Cidade</label>
+            <select class="custom-select d-block w-100" id="cidade" required="">
+              <option value="">Escolha</option>
+              <option>Goiânia</option>
+              <option>Trindade</option>
+              <option>Aparecida de Goiânia</option>
+              <option>Catalão</option>
+              <option>Rio Verde</option>
+              <option>Jataí</option>
+            </select>
+          </div>
+        <div class="col-md-3 mb-3">
+          <label for="zip">CEP</label>
+          <input type="text" class="form-control" id="zip" placeholder="" required="">
+          
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="telefone">Telefone</label>
+            <input type="text" class="form-control" id="telefone" placeholder="" value="" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="celular">Celular</label>
+            <input type="text" class="form-control" id="celular" placeholder="" value="" required="">
+          </div>
+        </div>
+    
+        <br>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+    </form>
+  </div>
+</div>
+<br>
+<hr class="featurette-divider">
+          <!-- FOOTER -->
+          <footer class="container">
+              <p class="float-right"><a href="#">Voltar ao topo</a></p>
+              <p>© Projeto de PW, 2019/01  · <a href="#">Privacidade</a> · <a href="#">Termos</a></p>
+            </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+      <script src="form-validation.js"></script>
+
+</body></html>
