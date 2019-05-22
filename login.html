@@ -4,14 +4,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
+        <link rel="icon" href="imagens/favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
         
         <title>fixIt</title>
         
         <!-- Principal CSS do Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link href="login.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
 
 
     </head>
@@ -21,7 +21,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 
-                <a class="navbar-brand" href="#">fixIt</a>
+                <a class="navbar-brand" href="home.html">fixIt</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,8 +37,8 @@
                             </a>
                             
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Cadastrar como Cliente</a>
-                                <a class="dropdown-item" href="#">Cadastrar como Prestador</a>
+                                <a class="dropdown-item" href="cadastrocliente.html">Cadastrar como Cliente</a>
+                                <a class="dropdown-item" href="cadastroprestador.html">Cadastrar como Prestador</a>
                                 
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Estou com dúvida</a>
@@ -46,7 +46,7 @@
                         </li>
                             
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="login.html">Login</a>
                         </li>
                            
                         <!-- <li class="nav-item">
@@ -69,13 +69,13 @@
 
         <form class="form-signin">
 
-            <img class="mb-4" src="logo.png" alt="" width="72" height="72">
+            <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Login</h1>
             <label for="inputEmail" class="sr-only">Usuário</label>
             <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
             <label for="inputPassword" class="sr-only">Senha</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <button class="btn btn-lg btn-warning btn-block" type="submit">Entrar</button>
             <button type="button" class="btn btn-outline-warning btn-sm mt-2">Não sou cadastrado</button>
             <button type="button" class="btn btn-outline-warning btn-sm mt-2">Esqueci senha</button>
         
