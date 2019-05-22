@@ -1,0 +1,18 @@
+.container{
+    margin-top: 10%;
+}
+
+.col-2{
+    width: 500px;
+    background-color: ghostwhite;
+    box-shadow: 0 3px 9px grey;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.col-8{
+    background-color: ghostwhite;
+    box-shadow: 0 3px 9px grey;
+    border-radius: 10px;
+    margin-left: 60px;
+}
