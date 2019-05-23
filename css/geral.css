@@ -1,0 +1,11 @@
+.btcolor{
+    background-color: #F80;
+}
+
+.btcolor_outline{
+    border-color: #F80;
+}
+
+.btcolor_outline:hover{
+    background-color: #F80;
+}
