@@ -6,7 +6,7 @@
         <meta name="author" content="">
         <link rel="icon" href="imagens/favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
     
-        <title>Home | fixIt</title>
+        <title>fixIt</title>
     
         <!-- Principal CSS do Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,12 +15,15 @@
         <!-- Estilos customizados para esse template--> 
         <link href="css/carousel.css" rel="stylesheet">
 
+        <link href="css/geral.css" rel="stylesheet">
+
       </head>
       <body>
     
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="home.html">fixIt</a>
+                <!--<a class="navbar-brand" href="home.html">fixIt</a>-->
+                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,7 +41,7 @@
                           <a class="dropdown-item" href="cadastrocliente.html">Cadastrar como Cliente</a>
                           <a class="dropdown-item" href="cadastroprestador.html">Cadastrar como Prestador</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Estou com dúvida</a>
+                          <a class="dropdown-item" href="ajuda.html">Estou com dúvida</a>
                         </div>
                       </li>
                     <li class="nav-item active">
@@ -47,14 +50,12 @@
                    <!-- <li class="nav-item">
                       <a class="nav-link disabled" href="#">Meu Perfil</a>
                     </li>-->
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Ajuda</a>
-                    </li>
+                    
                     
                   </ul>
               <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btn btn-outline my-2 my-sm-0 btcolor_outline" type="submit">Pesquisar</button>
               </form>
             </div>
           </nav>
@@ -75,7 +76,7 @@
                   <div class="carousel-caption text-left">
                     <h1>Cadastre-se e ganhe dinheiro!</h1>
                     <p>Ganhe visibilidade, mostre seus serviços e melhore sua renda!</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Cadastre-se</a></p>
+                    <p><a class="btn btcolor" href="ajuda.html" role="button">Cadastre-se »</a></p>
                   </div>
                 </div>
               </div>
@@ -95,7 +96,7 @@
                     <div class="carousel-caption text-right">
                       <h1>Veja os melhores profissionais do mercado!</h1>
                       <p>Procure o profissional adequado para o seu problema!</p>
-                      <p><a class="btn btn-lg btn-primary" href="#" role="button">Procure agora »</a></p>
+                      <p><a class="btn btcolor" href="ajuda.html" role="button">Procure agora »</a></p>
                     </div>
                   </div>
                 </div>
@@ -148,7 +149,7 @@
               <div class="col-md-7">
                 <h2 class="featurette-heading">Não está achando um profissonal de confiança? <span class="text-muted">fixIt te ajuda nisso! </span></h2>
                 <p class="lead">Cadastre-se agora!</p>
-                <p><a class="btn btn-secondary" href="#" role="button">Cadastre-se »</a></p>
+                <p><a class="btn btcolor" href="ajuda.html" role="button">Cadastre-se »</a></p>
               </div>
               <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" data-src="imagens/profissional.jpg" alt="500x500" style="width: 500px; height: 500px;" src="imagens/profissional.jpg" data-holder-rendered="true">

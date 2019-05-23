@@ -7,11 +7,12 @@
     <title>Perfil | fixIt</title>
     <link href="css/perfilusuario.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link href="css/geral.css" rel="stylesheet">
 </head>
 <body>
     <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#">fixIt</a>
+                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -21,27 +22,18 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Cadastrar
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Cadastrar como Cliente</a>
-                          <a class="dropdown-item" href="#">Cadastrar como Prestador</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Estou com dúvida</a>
-                        </div>
-                      </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Login</a>
-                    </li>
+
                     <li class="nav-item active">
                       <a class="nav-link" href="perfilusuario.html">Meu Perfil</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Sair</a>
                     </li>
                   </ul>
               <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btn btn-outline btcolor_outline my-2 my-sm-0" type="submit">Pesquisar</button>
               </form>
             </div>
           </nav>
@@ -79,7 +71,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Editar Perfil"/>
+                        <input type="submit" class="btn btcolor" name="btnAddMore" value="Editar Perfil"/>
                     </div>
                 </div>
                 <div class="row">

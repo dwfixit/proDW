@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
+        <link rel="icon" href="imagens/favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
         
         <title>Busca | fixIt</title>
         
@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link href="css/procurar.css" rel="stylesheet">
+        <link href="css/geral.css" rel="stylesheet">
 
 
     </head>
@@ -21,7 +22,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 
-                <a class="navbar-brand" href="#">fixIt</a>
+                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,20 +32,21 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                            
+                        
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Sair</a>
+                            <a class="nav-link" href="perfilusuario.html">Meu Perfil</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Sair</a>
                         </li>
                             
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Ajuda</a>
-                        </li>
                             
                     </ul>
                       
                     <form class="form-inline mt-2 mt-md-0">
                         <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
-                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+                        <button class="btn btn-outline btcolor_outline my-2 my-sm-0" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </nav>
@@ -92,7 +94,11 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                         <label class="form-check-label" for="inlineCheckbox2">Limpeza pós-obra</label>
-                    </div>      
+                    </div>
+                    
+                    <div class="botao">
+                        <button class="btn btcolor">Pesquisar</button>
+                    </div>
                 </div>
 
                 <div class="col-8">
@@ -102,7 +108,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Albert Einstein</h5>
                                 <p class="card-text">Encanador, Eletricista</p>
-                                <a href="" class="btn btn-warning">Perfil</a>
+                                <a href="" class="btn btcolor">Perfil</a>
                             </div>
                         </div>
 
@@ -111,7 +117,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Neymar Júnior</h5>
                                 <p class="card-text">Pintor, Gesseiro</p>
-                                <a href="" class="btn btn-warning">Perfil</a>
+                                <a href="" class="btn btcolor">Perfil</a>
                             </div>
                         </div>
 
@@ -120,7 +126,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Will Smith</h5>
                                 <p class="card-text">Serralheiro, Marceneiro</p>
-                                <a href="" class="btn btn-warning">Perfil</a>
+                                <a href="" class="btn btcolor">Perfil</a>
                             </div>
                         </div>
                     </div>

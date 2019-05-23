@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link href="css/login.css" rel="stylesheet">
+        <link href="css/geral.css" rel="stylesheet">
 
 
     </head>
@@ -20,7 +21,7 @@
 
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="home.html">fixIt</a>
+                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,23 +39,17 @@
                           <a class="dropdown-item" href="cadastrocliente.html">Cadastrar como Cliente</a>
                           <a class="dropdown-item" href="cadastroprestador.html">Cadastrar como Prestador</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Estou com dúvida</a>
+                          <a class="dropdown-item" href="ajuda.html">Estou com dúvida</a>
                         </div>
                       </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="login.html">Login</a>
                     </li>
-                   <!-- <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Meu Perfil</a>
-                    </li>-->
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Ajuda</a>
-                    </li>
-                    
+                   
                   </ul>
               <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
-                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btn btn-outline btcolor_outline my-2 my-sm-0" type="submit">Pesquisar</button>
               </form>
             </div>
           </nav>
@@ -68,14 +63,23 @@
             <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
             <label for="inputPassword" class="sr-only">Senha</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-            <a href="procurar.html" button class="btn btn-lg btn-warning btn-block" type="submit">Entrar</a>
-            <a href="cadastrocliente.html" button class="btn btn-outline-warning btn-sm mt-2">Não sou cadastrado</a>
-            <a href="esquecisenha.html" button class="btn btn-outline-warning btn-sm mt-2">Esqueci senha</a>
+            <a href="procurar.html" button class="btn btn-lg btn-block btcolor" type="submit">Entrar</a>
+            <a href="ajuda.html" button class="btn btn-outline btn-sm mt-2 btcolor_outline">Não sou cadastrado</a>
+            <a href="esquecisenha.html" button class="btn btn-outline btn-sm mt-2 btcolor_outline">Esqueci senha</a>
         
         </form>
+
+        
+
+
+
+
+
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
         <script>
-            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')Entrar
           </script>
         <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
         <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
@@ -83,12 +87,6 @@
         <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/holder.min.js"></script>
       
     
-    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs>
-      <style type="text/css">
-      </style>
-    </defs>
-    <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
-  </svg>
     </body>
 
 </html>
