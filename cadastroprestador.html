@@ -91,11 +91,14 @@
           </div>
         </div>
   
-        <div class="mb-3">
-          <label for="username">Nome de usuário</label>
-          <div class="input-group">
-            
-            <input type="text" class="form-control" id="username" placeholder="Escolha um nome de usuário para fazer o login" required="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nome de usuário</label>
+            <input type="text" class="form-control" id="username" placeholder="Escolha um nome de usuário para fazer o login" value="" required="">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Senha</label>
+            <input type="password" class="form-control" id="passw" placeholder="Escolha uma senha de pelo menos 8 dígitos" value="" required="">
           </div>
         </div>
   
@@ -214,10 +217,6 @@
               <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
           </form>
-          <div class="mb-3">
-            <label for="address">Média de preço dos serviços:</label>
-            <input type="text" class="form-control" id="preco" required="">
-          </div>
           
           <div class="mb-3">
             <label for="zip">Formas de pagamento aceitas:</label>            
