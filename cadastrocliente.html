@@ -78,72 +78,85 @@
   <p class="lead">Para começar a conhecer profissionais de qualidade, cadastre-se. É grátis!</p>
 </div>
   <div class="col-md-12 order-md-1">
-    <form class="needs-validation" novalidate="">
+    <form action="cadastrocliente.php" method="POST" class="needs-validation"  enctype="multipart/form-data">
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="firstName">Nome</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" name="nome">
+          <input type="text" class="form-control" id="firstName" placeholder="" required name="nome">
         </div>
         <div class="col-md-6 mb-3">
           <label for="lastName">Sobrenome</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" name="sobrenome">
+          <input type="text" class="form-control" id="lastName" placeholder="" required name="sobrenome">
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="firstName">Nome de usuário</label>
-          <input type="text" class="form-control" id="username" placeholder="Escolha um nome de usuário para fazer o login" value="" required="">
+          <input type="text" class="form-control" id="username" placeholder="Escolha um nome de usuário para fazer o login" required name="login">
         </div>
         <div class="col-md-6 mb-3">
           <label for="lastName">Senha</label>
-          <input type="password" class="form-control" id="passw" placeholder="Escolha uma senha de pelo menos 8 dígitos" value="" required="">
+          <input type="password" class="form-control" id="passw" placeholder="Escolha uma senha de pelo menos 8 dígitos" required name="senha">
         </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="CPF">CPF</label>
+        <input type="CPF" class="form-control" id="CPF" maxlength="11" placeholder="XXXXXXXXXXX" name="XXXXXXXXXXX" required>
       </div>
 
       <div class="mb-3">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="usuario@exemplo.com" name="email">
+        <input type="email" class="form-control" id="email" placeholder="usuario@exemplo.com" name="email" required>
       </div>
 
       <div class="mb-3">
           <label for="address">Endereço Completo</label>
-          <input type="text" class="form-control" id="address" required="" name="endereço">
+          <input type="text" class="form-control" id="address" required name="endereco">
         </div>
 
       <div class="mb-3">
         <label for="address">Bairro</label>
-        <input type="text" class="form-control" id="address" required="" name="bairro">
+        <input type="text" class="form-control" id="address" required name="bairro">
       </div>
 
       <div class="row">
         
         <div class="col-md-4 mb-3">
           <label for="state">Estado</label>
-          <input type="text" class="form-control" id="estado" required="" name="estado">
+          <input type="text" class="form-control" id="estado" required name="estado">
         </div>
         <div class="col-md-5 mb-3">
             <label for="country">Cidade</label>
-            <input type="text" class="form-control" id="cidade" required="" name="cidade">
+            <input type="text" class="form-control" id="cidade" required name="cidade"/>
           </div>
         <div class="col-md-3 mb-3">
           <label for="zip">CEP</label>
-          <input type="text" class="form-control" id="zip" placeholder="" required="" name="cep">
+          <input type="text" class="form-control" id="zip" placeholder="" required name="cep"/>
           
         </div>
       </div>
       <div class="row">
           <div class="col-md-6 mb-3">
             <label for="telefone">Telefone</label>
-            <input type="text" class="form-control" id="telefone" placeholder="" value="" required="" name="telefone">
+            <input type="text" class="form-control" id="telefone" placeholder="" name="telefone">
           </div>
           <div class="col-md-6 mb-3">
             <label for="celular">Celular</label>
-            <input type="text" class="form-control" id="celular" placeholder="" value="" required="" name="celular">
+            <input type="text" class="form-control" id="celular" placeholder="" required name="celular">
           </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label for="fotoperfil">Insira uma foto de perfil</label>
+          <input type="hidden" name="MAX_FILE_SIZE" value="60000">
+          <input type="file" name="fotoperfil" id="fotoperfil">
         </div>
-    
-        <br>
+      </div>
+
+      <br>
       <button class="btn btcolor btn-lg btn-block" type="submit">Cadastrar</button>
     </form>
   </div>

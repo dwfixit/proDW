@@ -1,3 +1,30 @@
+<?php require_once("incluir/conexao.php");?>
+
+<?php 
+  session_start();
+  if(isset($_POST["usuario"])){
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
+
+    $login = "select * from cliente where login = '{$usuario}' and senha = '{$senha}';";
+
+    $acesso = mysqli_query($conecta, $login);
+    if(!$acesso){
+      die("Erro na consulta");
+    }
+
+    $informacao = mysqli_fetch_assoc($acesso);
+    if(empty($informacao)){
+      $mensagem = "Login sem sucesso";
+    } else{
+      $_SESSION["user_name"] = $informacao["login"];
+      header("location: perfilCliente.php");
+    }
+    
+  }
+?>
+
+
 <html lang="pt">
     <head>
         <meta charset="utf-8">
@@ -6,7 +33,7 @@
         <meta name="author" content="">
         <link rel="icon" href="imagens/favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
         
-        <title>Esqueci senha | fixIt</title>
+        <title>Login | fixIt</title>
         
         <!-- Principal CSS do Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -45,8 +72,7 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="login.php">Login</a>
                     </li>
-
-                    
+                   
                   </ul>
               <form class="form-inline mt-2 mt-md-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
@@ -54,34 +80,47 @@
               </form>
             </div>
           </nav>
-        </header>   
-        <div class="container">
-            <div class="py-5 text-center">
-              <img class="d-block mx-auto mb-4" src="imagens/logo.png" alt="" width="72" height="72">
-              <br><br>
-              <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Senha recuperada!</h4>
-                <p>Uma nova senha foi enviada para o seu e-mail. Utilize ela para fazer o login novamente.</p>
-                <hr>
-                <p class="mb-0">Caso não encontre o e-mail, verifique a caixa de spam.</p>
-              </div>
-            </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script>
-                window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-              </script>
-            <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
-            <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
-           
-            <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/holder.min.js"></script>
-          
+        </header>
+
+        <form action="login.php" method="POST" class="form-signin">
+
+            <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            <label for="inputEmail" class="sr-only">Usuário</label>
+            <input type="text" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus name="usuario">
+            <label for="inputPassword" class="sr-only">Senha</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required name="senha">
+            <button class="btn btn-lg btn-block btcolor" type="submit">Entrar</button>
+            <?php 
+              if(isset($mensagem)){
+                echo "<p>".$mensagem."</p>";
+              }
+            ?>
+            <a href="ajuda.html" button class="btn btn-outline btn-sm mt-2 btcolor_outline">Não sou cadastrado</a>
+            <a href="esquecisenha.html" button class="btn btn-outline btn-sm mt-2 btcolor_outline">Esqueci senha</a>
+
+        </form>
+
         
-        <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs>
-          <style type="text/css">
-          </style>
-        </defs>
-        <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
-      </svg>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script>
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')Entrar
+          </script>
+        <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+       
+        <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/holder.min.js"></script>
+      
+    
     </body>
 
 </html>
+
+<?php mysqli_close($conecta); ?>
