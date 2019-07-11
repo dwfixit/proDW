@@ -1,11 +1,11 @@
-<?php require_once("incluir/conexao.php");?>
-
 <?php 
-  session_start();
+    session_start();
+    require_once("incluir/conexao.php");
+?>
+<?php
   if(isset($_POST["usuario"])){
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
-
     $login = "select * from cliente where login = '{$usuario}' and senha = '{$senha}';";
 
     $acesso = mysqli_query($conecta, $login);
@@ -15,12 +15,13 @@
 
     $informacao = mysqli_fetch_assoc($acesso);
     if(empty($informacao)){
-      $mensagem = "Login sem sucesso";
+      $mensagem = "Login ou senha incorretos";
     } else{
       $_SESSION["user_name"] = $informacao["login"];
-      header("location: perfilCliente.php");
+      mysqli_close($conecta);
+      header("Location: https://dwfixit.000webhostapp.com/perfilCliente.php");
+      exit();
     }
-    
   }
 ?>
 
@@ -48,7 +49,7 @@
 
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
+                <a href="index.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,7 +64,7 @@
                           Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="cadastrocliente.html">Cadastrar como Cliente</a>
+                          <a class="dropdown-item" href="cadastrocliente.php">Cadastrar como Cliente</a>
                           <a class="dropdown-item" href="cadastroprestador.html">Cadastrar como Prestador</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="ajuda.html">Estou com dúvida</a>
@@ -93,7 +94,7 @@
             <button class="btn btn-lg btn-block btcolor" type="submit">Entrar</button>
             <?php 
               if(isset($mensagem)){
-                echo "<p>".$mensagem."</p>";
+                echo "<p class='btn btn-outline-danger mt-2'>".$mensagem."</p>";
               }
             ?>
             <a href="ajuda.html" button class="btn btn-outline btn-sm mt-2 btcolor_outline">Não sou cadastrado</a>
@@ -123,4 +124,4 @@
 
 </html>
 
-<?php mysqli_close($conecta); ?>
+<?php mysqli_close($conecta);?>

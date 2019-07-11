@@ -1,0 +1,185 @@
+<html lang="pt">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="imagens/favicon-32x32.png"> <!--MUDANDO O ICONE QUE APARECE AO ABRIR O SITE-->
+    
+        <title>fixIt</title>
+    
+        <!-- Principal CSS do Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+        <!-- Estilos customizados para esse template--> 
+        <link href="css/carousel.css" rel="stylesheet">
+
+        <link href="css/geral.css" rel="stylesheet">
+
+      </head>
+      <body>
+    
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <!--<a class="navbar-brand" href="home.html">fixIt</a>-->
+                <a href="index.html"><img src="imagens/favicon-32x32.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cadastrar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="cadastrocliente.php">Cadastrar como Cliente</a>
+                          <a class="dropdown-item" href="cadastroprestador.html">Cadastrar como Prestador</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="ajuda.html">Estou com dúvida</a>
+                        </div>
+                      </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="login.php">Login</a>
+                    </li>
+
+                    
+                  </ul>
+              <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Procurar">
+                <button class="btn btn-outline my-2 my-sm-0 btcolor_outline" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </nav>
+        </header>
+    
+        <main role="main">
+    
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="first-slide" src="imagens/MarromC.jpeg" alt="First slide">
+                <div class="container">
+                  <div class="carousel-caption text-left">
+                    <h1>Cadastre-se e ganhe dinheiro!</h1>
+                    <p>Ganhe visibilidade, mostre seus serviços e melhore sua renda!</p>
+                    <p><a class="btn btcolor" href="ajuda.html" role="button">Cadastre-se »</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="second-slide" src="imagens/AmareloC.jpeg" alt="Second slide">
+
+              </div>
+              <div class="carousel-item">
+                  <img class="third-slide" src="imagens/LaranjaC.jpeg" alt="Third slide">
+                  <div class="container">
+                    <div class="carousel-caption text-right">
+                      <h1>Veja os melhores profissionais do mercado!</h1>
+                      <p>Procure o profissional adequado para o seu problema!</p>
+                      <p><a class="btn btcolor" href="ajuda.html" role="button">Procure agora »</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Voltar</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Avançar</span>
+            </a>
+          </div>
+    
+    
+          <!-- Mensagens de marketing e outras feature
+          ================================================== -->
+          <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+    
+          <div class="container marketing">
+    
+            <!-- Três colunas de texto, abaixo do carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="imagens/ferramenta.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Profissionais avaliados</h2>
+                <p>Usuários podem avaliar os profissionais após os serviços. Escolha aquele que te atende da melhor forma!</p>
+              </div>
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzlE3MhCi6tVFti2KpC6TynCKEw6jlJAznpGJfaX-Zqm7yUzG" alt="Generic placeholder image" width="140" height="140">
+                <h2>Dúvida se é de confiança?</h2>
+                <p>Leia comentários de clientes passados, veja avaliações e serviços completos de cada profissional!</p>
+
+              </div>
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="data:image/png;base64,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" alt="Generic placeholder image" width="140" height="140">
+                <h2>Temos a solução!</h2>
+                <p>Queremos te ajudar a achar o melhor profissional em menos tempo!</p>
+              </div>
+            </div>
+    
+    
+            <!-- COMEÇAM AS MENCIONADAS FEATURE-->
+    
+            <hr class="featurette-divider">
+    
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Não está achando um profissonal de confiança? <span class="text-muted">fixIt te ajuda nisso! </span></h2>
+                <p class="lead">Cadastre-se agora!</p>
+                <p><a class="btn btcolor" href="ajuda.html" role="button">Cadastre-se »</a></p>
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="imagens/profissional.jpg" alt="500x500" style="width: 500px; height: 500px;" src="imagens/profissional.jpg" data-holder-rendered="true">
+              </div>
+            </div>
+    
+            <hr class="featurette-divider">
+    
+            <hr class="featurette-divider">
+    
+            <!-- /FIM DAS FEATURE-->
+    
+          </div><!-- /.container -->
+    
+    
+          <!-- FOOTER -->
+          <footer class="container">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>© Projeto de PW, 2019/01  · <a href="#">Privacidade</a> · <a href="#">Termos</a></p>
+          </footer>
+        </main>
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+          </script>
+        <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+       
+        <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/holder.min.js"></script>
+      
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs>
+      <style type="text/css">
+      </style>
+    </defs>
+    <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text>
+  </svg>
+</body>
+    
+    
+    
+    </html>

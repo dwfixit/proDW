@@ -2,13 +2,12 @@
     require_once("incluir/conexao.php");
     require_once("incluir/funcoes.php");
 ?>
-
 <?php
     session_start();
-    $usuario = $_SESSION["user_name"];
     if (!isset($_SESSION["user_name"])){
-        Header("Location: login.php");
+        Header("Location: https://dwfixit.000webhostapp.com/login.php");
     }
+    $usuario = $_SESSION["user_name"];
     $consulta = "SELECT * from cliente WHERE login = '{$usuario}';";
     
     $dados = mysqli_query($conecta, $consulta);
@@ -37,7 +36,7 @@
 <body>
     <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a href="home.html"><img src="imagens/favicon-32x32.png"></a>
+                <a href="index.html"><img src="imagens/favicon-32x32.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item active">
