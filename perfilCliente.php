@@ -64,15 +64,15 @@
         </header>
 
     <div class="container emp-profile">
-            <form method="post">
+            <form action="excluir.php" method="post">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
                             <img src="<?php echo $dados["caminho_foto"]?>" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
+                            <!--<div class="file btn btn-lg btn-primary">
                                 Mudar Foto
                                 <input type="file" name="fotoperfil"/>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="btn btcolor" name="btnAddMore" value="Editar Perfil"/>
+                            <button type="submit" class="btn btcolor">Deletar Perfil</button>
                     </div>
                 </div>
                 <div class="row">
